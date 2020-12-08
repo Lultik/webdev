@@ -18,12 +18,15 @@ module.exports = {
                "sass-loader",
             ],
          },
+         {
+            test: /\.(png|jpe?g|gif)$/i,
+            loader: 'file-loader',
+            options: {outputPath: './src/img', publicPath: './src/img', useRelativePaths: true}
+         },
       ],
    },
    plugins: [
       new MiniCssExtractPlugin({
-         // Options similar to the same options in webpackOptions.output
-         // both options are optional
          filename: "style.css",
       }),
       new HtmlWebpackPlugin({

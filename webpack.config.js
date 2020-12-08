@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -24,6 +25,11 @@ module.exports = {
          // Options similar to the same options in webpackOptions.output
          // both options are optional
          filename: "style.css",
+      }),
+      new HtmlWebpackPlugin({
+         title: 'webdev',
+         filename: 'index.html',
+         template: "./index.html"
       }),
    ],
    mode: 'development',

@@ -444,9 +444,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & > * {
+      flex: 1;
+    }
+    & > .logo {
+      text-align: center;
+      transform: translateX(0);
+    }
   }
 
   p {
+    text-align: right;
     color: #818181;
   }
 }
@@ -459,7 +468,7 @@ body {
     list-style: none;
 
     & > * + * {
-      margin-left: 40px;
+      margin-left: 20px;
 
       &::before {
         content: '';

@@ -369,3 +369,63 @@ body {
     }
   }
 }
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0 180px;
+
+  background: #F5F6F7;
+
+  &-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737;
+  }
+
+  p {
+    max-width: 480px;
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #4E4E4E;
+    text-align: center;
+  }
+}
+
+.buttons {
+  display: flex;
+
+  .button-store {
+    display: flex;
+
+    .button {
+      padding: 15px 18px;
+    }
+
+    .button-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 60px;
+      height: 45px;
+
+      background: #009CC2;
+    }
+
+    &:nth-last-child(1) {
+      margin-left: 30px;
+    }
+  }
+
+
+}
